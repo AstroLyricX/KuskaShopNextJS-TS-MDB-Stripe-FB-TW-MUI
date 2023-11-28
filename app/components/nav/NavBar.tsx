@@ -4,6 +4,7 @@ import { Redressed } from "next/font/google";
 import { CartCount } from "./CartCount";
 import { UserMenu } from "./UserMenu";
 import { getCurrenUser } from "@/actions/getCurrenUser";
+import { Categories } from "./Categories";
 
 const redressed = Redressed({ subsets: ["latin"], weight: ["400"] });
 
@@ -29,7 +30,7 @@ const NavBar = async () => {
             >
               KuskaShop
             </Link>
-            <div className="hidden md:block">Buscar</div>
+            <div className="hidden md:block"></div>
             <div className="flex items-center gap-8 md:gap-12">
               <CartCount />
               <UserMenu currentUser={currentUser} />
@@ -37,6 +38,7 @@ const NavBar = async () => {
           </div>
         </Container>
       </div>
+      <Categories />
     </div>
   );
 };
