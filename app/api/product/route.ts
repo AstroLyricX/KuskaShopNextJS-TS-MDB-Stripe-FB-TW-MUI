@@ -5,7 +5,11 @@ import { getCurrenUser } from "@/actions/getCurrenUser";
 export async function POST(request: Request) {
   const currenUser = await getCurrenUser();
 
-  if (!currenUser || currenUser.role !== "ADMIN") {
+  if (!currenUser) {
+    return NextResponse.error();
+  }
+
+  if (currenUser.role !== "ADMIN") {
     return NextResponse.error();
   }
 
