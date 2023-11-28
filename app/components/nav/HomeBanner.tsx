@@ -6,13 +6,13 @@ export const HomeBanner = () => {
       <div className="mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-center justify-evenly">
         <div className="mb-8 md:mb-0 text-center">
           <h1 className="text-4xl md:text-6xl font-bold  text-white mb-4">
-            ¡Oferta de noviembre en KuskaShop!
+            ¡Celebra la Navidad con nosotros!
           </h1>
           <p className="text-lg md:text-xl text-white mb-2">
-            Descubre los tesoros de la artesanía peruana.
+            Explora los tesoros de la artesanía peruana.
           </p>
           <p className="text-2xl md:text-5xl text-yellow-400 font-bold">
-            ¡con un 30% de descuento en productos!
+            ¡30% de descuento en tu celebración festiva!
           </p>
         </div>
         <div className="w-1/3 relative aspect-video">
