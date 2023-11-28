@@ -99,7 +99,7 @@ export const CheckoutClient = () => {
           <div className="max-w-[220px] w-full">
             <Button
               label="Ver detalles de tus pedidos"
-              onClick={() => router.push("/order")}
+              onClick={() => router.push("/orders")}
             />
           </div>
         </div>
